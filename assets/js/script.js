@@ -55,17 +55,14 @@ var Day = [{
     meridiem: "PM",   
 }
 ]
-    
-
 //Can enter the event + SAVE event in the timeblock --> use localStorage
 
-    $(".saveBtn").on ("click",function(){
+   $(".saveBtn").on ("click",function(){
     var userInput = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
     localStorage.setItem(userInput,time);
     console.log(userInput);
     console.log(time);
-
  });
 
 // function colorBlock() {
