@@ -25,7 +25,7 @@ function colorBlock() {
         // $(document).ready(handler);
         // event.PreventDefault();
         // console.log(this);
-        var text = ($(this).siblings(".description").val());
+        var text = $(this).siblings(".description").val().trim();
         console.log(text);
         var value = $(this).parent().attr("id");//returning all the div's has unique ids
         console.log(value);
@@ -37,6 +37,7 @@ function colorBlock() {
 
     //retrieving the stored data from local storage for each timeblock 
     //targetting the id , class description
+    function storedData(){
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
     $("#hour-11 .description").val(localStorage.getItem("hour-11"));
@@ -47,7 +48,8 @@ function colorBlock() {
     $("#hour-16 .description").val(localStorage.getItem("hour-4"));
     $("#hour-17 .description").val(localStorage.getItem("hour-5"));
     $("#hour-18 .description").val(localStorage.getItem("hour-6"));
-
+    };
+    storedData();
 
 
     
