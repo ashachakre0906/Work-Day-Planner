@@ -21,7 +21,8 @@ function colorBlock() {
     });}
     colorBlock();
  ////Added event listener to the save button   
-    $(".saveBtn").on("click",function(event){
+    $(".saveBtn").on("click",function(handler){
+        // $(document).ready(handler);
         // event.PreventDefault();
         // console.log(this);
         var text = ($(this).siblings(".description").val());
@@ -33,6 +34,7 @@ function colorBlock() {
         // console.log(userInput);
         // console.log(time);
      });
+
     //retrieving the stored data from local storage for each timeblock 
     //targetting the id , class description
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
