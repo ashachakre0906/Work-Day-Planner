@@ -37,7 +37,7 @@ function colorBlock() {
 
     //retrieving the stored data from local storage for each timeblock 
     //targetting the id , class description
-    function storedData(){
+    function displayData(){
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
     $("#hour-11 .description").val(localStorage.getItem("hour-11"));
@@ -49,7 +49,7 @@ function colorBlock() {
     $("#hour-17 .description").val(localStorage.getItem("hour-5"));
     $("#hour-18 .description").val(localStorage.getItem("hour-6"));
     };
-    storedData();
+    displayData();
 
 
     
