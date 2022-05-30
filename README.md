@@ -38,7 +38,7 @@ THEN the saved events persist
 
 ### Header displays the current day, date and time
 
-<img src =./assets/currentdateandtime.png>
+<img src =./assets/images/currentdateandtime.png>
 
 ### Color-coded each time-block (PAST - GREY,PRESENT - RED, FUTURE - GREEN)
 
