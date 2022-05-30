@@ -28,13 +28,13 @@ function colorCoded() {
     colorCoded();//Calling function colorCoded().
     //Added event listener to the save button   
     $(".saveBtn").on("click",function(){
-        var text = $(this).siblings(".description").val().trim();
+        var text = $(this).siblings(".description").val().trim();//grabbing the description class from sibling textarea html element 
         console.log(text);
         var value = $(this).parent().attr("id");
         console.log(value);
-        localStorage.setItem(value,text);//saving the data into local storage
+        localStorage.setItem(value,text);//saving the data into local storage using set item method
      });
-    //retrieving the stored data from local storage for each timeblock and displaying on the page using getitem method
+    //Retrieving the stored data from local storage for each timeblock and displaying on the page using getitem method
     function displayData(){
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
@@ -47,4 +47,4 @@ function colorCoded() {
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
     $("#hour-18 .description").val(localStorage.getItem("hour-18"));
     };
-    displayData();
+    displayData();//calling display data function
