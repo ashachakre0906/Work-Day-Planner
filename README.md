@@ -1,7 +1,8 @@
 ## Work-Day Scheduler
 
 ## Decsription of the project
-`Work-day scheduler` allows user to save events for each hour of the day.The app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. Moment.js link to an library to work with date and time.header will display the current date,day and time on the top of the webpage through `moment().format()`.`index.html` will have timeblocks created for each hour .common class `timeblock`attached to the parent `div`.Textarea is basically sibling which has a common class `description`for each div.Each block are color coded to represents if it is past, present and future.When user enters data in any timeblock and clicks the save button it needs to saved in the local storage by `localStorage.setItem()`method.Retrieving the stored data from local storage for each timeblock and displaying on the page using `localStorage.setItem()`method.Refreshing the page to make sure my saved events still persists.
+
+`Work-day scheduler` allows user to save events for each hour of the day.The app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. Moment.js link to an library to work with date and time.header will display the current date,day and time on the top of the webpage through `moment().format()`.`index.html` will have timeblocks created for each hour .common class `timeblock`attached to the parent `div`.Textarea is basically sibling which has a common class `description`for each div.Each block are color coded to represents if it is past, present and future.When user enters data in any timeblock and clicks the save button it needs to saved in the local storage by `localStorage.setItem()`method.Retrieving the stored data from local storage for each timeblock and displaying on the page using `localStorage.getItem()`method.Refreshing the page to make sure my saved events still persists.Added comments throughout the html and script.js file.
 
 ## Links
 
@@ -9,12 +10,15 @@
 [Live webpage URL](https://ashachakre0906.github.io/Work-Day-Planner/)<br>
 
 ## User Story
+
 ```
 AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 ```
+
 ## Acceptance Criteria
+
 ```
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
@@ -31,15 +35,17 @@ WHEN I refresh the page
 THEN the saved events persist
 
 ```
+
 ### Header displays the current day, date and time
-<img src =./assets/images/>
 
-### Color-coded each time-block (PAST - GREY,)
-<img src =./assets/images/>
+<img src =./assets/colorblock.png>
 
-###
+### Color-coded each time-block (PAST - GREY,PRESENT - RED, FUTURE - GREEN)
+
+<img src =./assets/currentdateandtime.png>
 
 ### Function displayData() will retrieve the data from the local storage and display it on the page.data will still persists after refreshing the page.
+
 ```
 function displayData(){
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
@@ -55,6 +61,7 @@ function displayData(){
     };
     displayData()
 ```
+
 ## Built with
 
 - HTMLs
