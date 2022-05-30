@@ -1,14 +1,14 @@
 //Displying current date and time pulling from moment.js
 var dateTime = moment().format('dddd, MMMM Do - h:mm:ss a');
 $('#currentDay').text(dateTime);
-console.log(dateTime);
+// console.log(dateTime);
 //for each method to loop over each time block and display the colors
 function colorCoded() {
     var hourNow = moment().hour(); //displaying the current hour
     $(".time-block").each(function() {//targetting the class timeblock which is common in each div
         var Time = $(this).attr("id").split("-")[1];//It will return the string "hour-9" and soon.we will remove the dash using split()method and pull the index 1.
         console.log (Time);
-        //Adding and removing the class past, present and futute based on the if statement.
+        //Adding and removing class past, present and future.
         if(Time < hourNow) {
             $(this).addClass("past");
             $(this).removeClass("present");
