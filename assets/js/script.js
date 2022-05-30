@@ -1,13 +1,14 @@
+//Displying current date and time pulling from moment.js
 var dateTime = moment().format('dddd, MMMM Do - h:mm:ss a');
 $('#currentDay').text(dateTime);
 console.log(dateTime);
-//for each method to loop over each time block
+//for each method to loop over each time block and display the colors
 function colorCoded() {
-    var hourNow = moment().hour(); 
-    $(".time-block").each(function() {
-        var Time = $(this).attr("id").split('-')[1];
-        console.log ($(this));
-        console.log(typeof Time);//returns string
+    var hourNow = moment().hour(); //displaying the current hour
+    $(".time-block").each(function() {//targetting the class timeblock which is common in each div
+        var Time = $(this).attr("id").split("-")[1];//It will return the string "hour-9" and soon.we will remove the dash using split()method and pull the index 1.
+        console.log (Time);
+        //Adding and removing the class past, present and futute based on the if statement.
         if(Time < hourNow) {
             $(this).addClass("past");
             $(this).removeClass("present");
@@ -24,7 +25,7 @@ function colorCoded() {
             $(this).addClass("future");
         }   
     });}
-    colorCoded();
+    colorCoded();//Calling function colorCoded().
     //Added event listener to the save button   
     $(".saveBtn").on("click",function(){
         var text = $(this).siblings(".description").val().trim();
@@ -33,9 +34,7 @@ function colorCoded() {
         console.log(value);
         localStorage.setItem(value,text);//saving the data into local storage
      });
-
-    //retrieving the stored data from local storage for each timeblock 
-    //targetting the id , class description
+    //retrieving the stored data from local storage for each timeblock and displaying on the page using getitem method
     function displayData(){
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
