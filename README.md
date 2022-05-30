@@ -38,11 +38,11 @@ THEN the saved events persist
 
 ### Header displays the current day, date and time
 
-<img src =./assets/colorblock.png>
+<img src =./assets/currentdateandtime.png>
 
 ### Color-coded each time-block (PAST - GREY,PRESENT - RED, FUTURE - GREEN)
 
-<img src =./assets/currentdateandtime.png>
+<img src =./assets/images/colorblock.png>
 
 ### Function displayData() will retrieve the data from the local storage and display it on the page.data will still persists after refreshing the page.
 
