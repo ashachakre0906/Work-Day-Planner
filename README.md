@@ -60,7 +60,6 @@ function displayData(){
     };
     displayData()
 ```
-
 ## Built with
 
 - HTMLs
