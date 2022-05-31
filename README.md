@@ -65,7 +65,7 @@ function displayData(){
 
 - HTMLs
 - CSS
-- Javascript
+- Jquery
 
 ## Author
 
