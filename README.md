@@ -2,7 +2,7 @@
 
 ## Decsription of the project
 
-`Work-day scheduler` allows user to save events for each hour of the day.The app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. Moment.js link to an library to work with date and time.header will display the current date,day and time on the top of the webpage through `moment().format()`.`index.html` will have timeblocks created for each hour .common class `timeblock`attached to the parent `div`.Textarea is basically sibling which has a common class `description`for each div.Each block are color coded to represents if it is past, present and future.When user enters data in any timeblock and clicks the save button it needs to saved in the local storage by `localStorage.setItem()`method.Retrieving the stored data from local storage for each timeblock and displaying on the page using `localStorage.getItem()`method.Refreshing the page to make sure my saved events still persists.Added comments throughout the html and script.js file.
+`Work-day scheduler` allows user to save events for each hour of the day.The app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. `moment.js` link to an library to work with date and time.Header will display the current date,day and time on the top of the webpage through `moment().format()`.`index.html` will have timeblocks created for each hour .common class `timeblock`attached to the parent `div`.Textarea is basically sibling which has a common class `description`for each div.Each block are color coded to represents if it is past, present and future.When user enters data in any timeblock and clicks the save button it needs to saved in the local storage by `localStorage.setItem()`method.Retrieving the stored data from local storage for each timeblock and displaying on the page using `localStorage.getItem()`method.Refreshing the page to make sure my saved events still persists.Added comments throughout the html and script.js file.
 
 ## Links
 
@@ -18,7 +18,6 @@ SO THAT I can manage my time effectively
 ```
 
 ## Acceptance Criteria
-
 ```
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
@@ -70,8 +69,7 @@ function displayData(){
 
 ## Author
 
-Asha Chakre
-
+Starter code includes some parts of HTML and full CSS given by UC Berkely Extension.
 ## License
 
 Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
