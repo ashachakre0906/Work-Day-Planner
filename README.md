@@ -2,7 +2,7 @@
 
 ## Decsription of the project
 
-`Work-day scheduler` allows user to save events for each hour of the day.The app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. `moment.js` link to an library to work with date and time.Header will display the current date,day and time on the top of the webpage through `moment().format()`.`index.html` will have timeblocks created for each hour .common class `timeblock`attached to the parent `div`.Textarea is basically sibling which has a common class `description`for each div.Each block are color coded to represents if it is past, present and future.When user enters data in any timeblock and clicks the save button it needs to saved in the local storage by `localStorage.setItem()`method.Retrieving the stored data from local storage for each timeblock and displaying on the page using `localStorage.getItem()`method.Refreshing the page to make sure my saved events still persists.Added comments throughout the html and script.js file.
+`Work-day scheduler` allows user to save events for each hour of the day.The app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. `moment.js` link to an library to work with date and time.Header will display the current date,day and time on the top of the webpage through `moment().format()`.`index.html` will have timeblocks created for each hour .common class `timeblock`attached to the parent `div`.Textarea is basically sibling which has a common class `description`for each div.Each block are color coded to represents if it is past, present and future.When user enters data in any timeblock and clicks the save button it needs to saved in the local storage by `localStorage.setItem()`method.Retrieving the stored data from local storage for each timeblock and displaying on the page using `localStorage.getItem()`method.Refreshing the page to make sure my saved events still persists.Added comments throughout the html and script.js file.Using Bootstrap to develop a responsive and mobile friendly webpage.
 
 ## Links
 
@@ -65,6 +65,7 @@ function displayData(){
 - HTMLs
 - CSS
 - Jquery
+- Bootstrap. 
 
 ## Author
 
